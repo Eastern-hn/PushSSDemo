@@ -37,11 +37,11 @@ public:
     QHBoxLayout *horizontalLayout_8;
     QLabel *label_7;
     QPushButton *m_ImgRecStartBtn;
-    QPushButton *pushButton_6;
+    QPushButton *m_ImgRecCloseBtn;
     QHBoxLayout *horizontalLayout_9;
     QLabel *label_8;
-    QPushButton *pushButton_7;
-    QPushButton *pushButton_8;
+    QPushButton *m_pushSoundStartBtn;
+    QPushButton *m_pushSoundCloseBtn;
     QSpacerItem *verticalSpacer;
     QGroupBox *groupBox;
     QHBoxLayout *horizontalLayout;
@@ -102,6 +102,7 @@ public:
         horizontalLayout_11->setSpacing(6);
         horizontalLayout_11->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        horizontalLayout_11->setContentsMargins(2, 1, 2, 3);
         m_info = new QTextBrowser(groupBox_3);
         m_info->setObjectName(QString::fromUtf8("m_info"));
         QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -127,6 +128,7 @@ public:
         verticalLayout_4->setSpacing(6);
         verticalLayout_4->setContentsMargins(11, 11, 11, 11);
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        verticalLayout_4->setContentsMargins(-1, -1, 3, -1);
         horizontalLayout_8 = new QHBoxLayout();
         horizontalLayout_8->setSpacing(6);
         horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
@@ -142,10 +144,10 @@ public:
 
         horizontalLayout_8->addWidget(m_ImgRecStartBtn);
 
-        pushButton_6 = new QPushButton(groupBox_2);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        m_ImgRecCloseBtn = new QPushButton(groupBox_2);
+        m_ImgRecCloseBtn->setObjectName(QString::fromUtf8("m_ImgRecCloseBtn"));
 
-        horizontalLayout_8->addWidget(pushButton_6);
+        horizontalLayout_8->addWidget(m_ImgRecCloseBtn);
 
 
         verticalLayout_4->addLayout(horizontalLayout_8);
@@ -160,15 +162,15 @@ public:
 
         horizontalLayout_9->addWidget(label_8);
 
-        pushButton_7 = new QPushButton(groupBox_2);
-        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        m_pushSoundStartBtn = new QPushButton(groupBox_2);
+        m_pushSoundStartBtn->setObjectName(QString::fromUtf8("m_pushSoundStartBtn"));
 
-        horizontalLayout_9->addWidget(pushButton_7);
+        horizontalLayout_9->addWidget(m_pushSoundStartBtn);
 
-        pushButton_8 = new QPushButton(groupBox_2);
-        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+        m_pushSoundCloseBtn = new QPushButton(groupBox_2);
+        m_pushSoundCloseBtn->setObjectName(QString::fromUtf8("m_pushSoundCloseBtn"));
 
-        horizontalLayout_9->addWidget(pushButton_8);
+        horizontalLayout_9->addWidget(m_pushSoundCloseBtn);
 
 
         verticalLayout_4->addLayout(horizontalLayout_9);
@@ -186,6 +188,7 @@ public:
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(5, -1, 5, -1);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
@@ -412,10 +415,10 @@ public:
         groupBox_2->setTitle(QCoreApplication::translate("PushSSDemoClass", "\345\233\276\345\275\242\350\257\206\345\210\253\344\270\216\351\237\263\351\242\221\346\216\250\351\200\201", nullptr));
         label_7->setText(QCoreApplication::translate("PushSSDemoClass", "\345\233\276\345\203\217\350\257\206\345\210\253\357\274\232", nullptr));
         m_ImgRecStartBtn->setText(QCoreApplication::translate("PushSSDemoClass", "\345\220\257\345\212\250", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("PushSSDemoClass", "\345\205\263\351\227\255", nullptr));
+        m_ImgRecCloseBtn->setText(QCoreApplication::translate("PushSSDemoClass", "\345\205\263\351\227\255", nullptr));
         label_8->setText(QCoreApplication::translate("PushSSDemoClass", "\351\237\263\351\242\221\346\216\250\351\200\201\357\274\232", nullptr));
-        pushButton_7->setText(QCoreApplication::translate("PushSSDemoClass", "\345\220\257\345\212\250", nullptr));
-        pushButton_8->setText(QCoreApplication::translate("PushSSDemoClass", "\345\205\263\351\227\255", nullptr));
+        m_pushSoundStartBtn->setText(QCoreApplication::translate("PushSSDemoClass", "\345\220\257\345\212\250", nullptr));
+        m_pushSoundCloseBtn->setText(QCoreApplication::translate("PushSSDemoClass", "\345\205\263\351\227\255", nullptr));
         groupBox->setTitle(QCoreApplication::translate("PushSSDemoClass", "\351\237\263\351\242\221\345\217\221\345\260\204\345\231\250\344\270\262\345\217\243\350\256\276\347\275\256", nullptr));
         m_em1SerLabel->setText(QCoreApplication::translate("PushSSDemoClass", "\345\217\221\345\260\204\345\231\2501\344\270\262\345\217\243\357\274\232", nullptr));
         m_em1SerOpenBtn->setText(QCoreApplication::translate("PushSSDemoClass", "\346\211\223\345\274\200", nullptr));
