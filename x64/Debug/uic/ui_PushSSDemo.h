@@ -20,17 +20,13 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_PushSSDemoClass
 {
 public:
-    QGroupBox *groupBox_3;
-    QHBoxLayout *horizontalLayout_11;
-    QTextBrowser *m_info;
-    QWidget *layoutWidget;
+    QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout_10;
     QGroupBox *groupBox_2;
     QVBoxLayout *verticalLayout_4;
@@ -76,53 +72,32 @@ public:
     QSpacerItem *horizontalSpacer_7;
     QComboBox *m_emSerChkBit;
     QSpacerItem *horizontalSpacer_8;
+    QGroupBox *groupBox_3;
+    QHBoxLayout *horizontalLayout_11;
+    QTextBrowser *m_info;
 
     void setupUi(QDialog *PushSSDemoClass)
     {
         if (PushSSDemoClass->objectName().isEmpty())
             PushSSDemoClass->setObjectName(QString::fromUtf8("PushSSDemoClass"));
         PushSSDemoClass->setEnabled(true);
-        PushSSDemoClass->resize(612, 460);
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        PushSSDemoClass->resize(720, 560);
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(PushSSDemoClass->sizePolicy().hasHeightForWidth());
         PushSSDemoClass->setSizePolicy(sizePolicy);
-        PushSSDemoClass->setMinimumSize(QSize(612, 460));
-        PushSSDemoClass->setMaximumSize(QSize(612, 460));
-        groupBox_3 = new QGroupBox(PushSSDemoClass);
-        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(10, 313, 591, 141));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(groupBox_3->sizePolicy().hasHeightForWidth());
-        groupBox_3->setSizePolicy(sizePolicy1);
-        horizontalLayout_11 = new QHBoxLayout(groupBox_3);
-        horizontalLayout_11->setSpacing(6);
-        horizontalLayout_11->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
-        horizontalLayout_11->setContentsMargins(2, 1, 2, 3);
-        m_info = new QTextBrowser(groupBox_3);
-        m_info->setObjectName(QString::fromUtf8("m_info"));
-        QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(m_info->sizePolicy().hasHeightForWidth());
-        m_info->setSizePolicy(sizePolicy2);
-        m_info->setAutoFillBackground(false);
-
-        horizontalLayout_11->addWidget(m_info);
-
-        layoutWidget = new QWidget(PushSSDemoClass);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(11, 11, 591, 301));
-        horizontalLayout_10 = new QHBoxLayout(layoutWidget);
+        PushSSDemoClass->setMinimumSize(QSize(720, 560));
+        PushSSDemoClass->setMaximumSize(QSize(720, 560));
+        verticalLayout_2 = new QVBoxLayout(PushSSDemoClass);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        horizontalLayout_10 = new QHBoxLayout();
         horizontalLayout_10->setSpacing(6);
-        horizontalLayout_10->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
-        horizontalLayout_10->setContentsMargins(0, 0, 0, 0);
-        groupBox_2 = new QGroupBox(layoutWidget);
+        horizontalLayout_10->setSizeConstraint(QLayout::SetDefaultConstraint);
+        groupBox_2 = new QGroupBox(PushSSDemoClass);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         verticalLayout_4 = new QVBoxLayout(groupBox_2);
         verticalLayout_4->setSpacing(6);
@@ -134,8 +109,11 @@ public:
         horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
         label_7 = new QLabel(groupBox_2);
         label_7->setObjectName(QString::fromUtf8("label_7"));
-        sizePolicy.setHeightForWidth(label_7->sizePolicy().hasHeightForWidth());
-        label_7->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(label_7->sizePolicy().hasHeightForWidth());
+        label_7->setSizePolicy(sizePolicy1);
 
         horizontalLayout_8->addWidget(label_7);
 
@@ -157,8 +135,8 @@ public:
         horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
         label_8 = new QLabel(groupBox_2);
         label_8->setObjectName(QString::fromUtf8("label_8"));
-        sizePolicy.setHeightForWidth(label_8->sizePolicy().hasHeightForWidth());
-        label_8->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_8->sizePolicy().hasHeightForWidth());
+        label_8->setSizePolicy(sizePolicy1);
 
         horizontalLayout_9->addWidget(label_8);
 
@@ -182,7 +160,7 @@ public:
 
         horizontalLayout_10->addWidget(groupBox_2);
 
-        groupBox = new QGroupBox(layoutWidget);
+        groupBox = new QGroupBox(PushSSDemoClass);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         horizontalLayout = new QHBoxLayout(groupBox);
         horizontalLayout->setSpacing(6);
@@ -197,29 +175,26 @@ public:
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         m_em1SerLabel = new QLabel(groupBox);
         m_em1SerLabel->setObjectName(QString::fromUtf8("m_em1SerLabel"));
-        sizePolicy.setHeightForWidth(m_em1SerLabel->sizePolicy().hasHeightForWidth());
-        m_em1SerLabel->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(m_em1SerLabel->sizePolicy().hasHeightForWidth());
+        m_em1SerLabel->setSizePolicy(sizePolicy1);
         m_em1SerLabel->setFrameShadow(QFrame::Plain);
 
         horizontalLayout_2->addWidget(m_em1SerLabel);
 
         m_em1Ser = new QComboBox(groupBox);
         m_em1Ser->setObjectName(QString::fromUtf8("m_em1Ser"));
-        QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Fixed);
-        sizePolicy3.setHorizontalStretch(0);
-        sizePolicy3.setVerticalStretch(0);
-        sizePolicy3.setHeightForWidth(m_em1Ser->sizePolicy().hasHeightForWidth());
-        m_em1Ser->setSizePolicy(sizePolicy3);
+        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(m_em1Ser->sizePolicy().hasHeightForWidth());
+        m_em1Ser->setSizePolicy(sizePolicy2);
 
         horizontalLayout_2->addWidget(m_em1Ser);
 
         m_em1SerOpenBtn = new QPushButton(groupBox);
         m_em1SerOpenBtn->setObjectName(QString::fromUtf8("m_em1SerOpenBtn"));
-        QSizePolicy sizePolicy4(QSizePolicy::Minimum, QSizePolicy::Fixed);
-        sizePolicy4.setHorizontalStretch(0);
-        sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(m_em1SerOpenBtn->sizePolicy().hasHeightForWidth());
-        m_em1SerOpenBtn->setSizePolicy(sizePolicy4);
+        sizePolicy1.setHeightForWidth(m_em1SerOpenBtn->sizePolicy().hasHeightForWidth());
+        m_em1SerOpenBtn->setSizePolicy(sizePolicy1);
 
         horizontalLayout_2->addWidget(m_em1SerOpenBtn);
 
@@ -236,11 +211,11 @@ public:
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         m_em2SerLabel = new QLabel(groupBox);
         m_em2SerLabel->setObjectName(QString::fromUtf8("m_em2SerLabel"));
-        QSizePolicy sizePolicy5(QSizePolicy::Fixed, QSizePolicy::Ignored);
-        sizePolicy5.setHorizontalStretch(0);
-        sizePolicy5.setVerticalStretch(0);
-        sizePolicy5.setHeightForWidth(m_em2SerLabel->sizePolicy().hasHeightForWidth());
-        m_em2SerLabel->setSizePolicy(sizePolicy5);
+        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Ignored);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(m_em2SerLabel->sizePolicy().hasHeightForWidth());
+        m_em2SerLabel->setSizePolicy(sizePolicy3);
         m_em2SerLabel->setFrameShadow(QFrame::Plain);
 
         horizontalLayout_3->addWidget(m_em2SerLabel);
@@ -269,11 +244,11 @@ public:
         m_emserBaudLbl = new QLabel(groupBox);
         m_emserBaudLbl->setObjectName(QString::fromUtf8("m_emserBaudLbl"));
         m_emserBaudLbl->setEnabled(true);
-        QSizePolicy sizePolicy6(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy6.setHorizontalStretch(3);
-        sizePolicy6.setVerticalStretch(0);
-        sizePolicy6.setHeightForWidth(m_emserBaudLbl->sizePolicy().hasHeightForWidth());
-        m_emserBaudLbl->setSizePolicy(sizePolicy6);
+        QSizePolicy sizePolicy4(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy4.setHorizontalStretch(3);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(m_emserBaudLbl->sizePolicy().hasHeightForWidth());
+        m_emserBaudLbl->setSizePolicy(sizePolicy4);
 
         horizontalLayout_4->addWidget(m_emserBaudLbl);
 
@@ -290,8 +265,11 @@ public:
         m_emserBaud->addItem(QString());
         m_emserBaud->addItem(QString());
         m_emserBaud->setObjectName(QString::fromUtf8("m_emserBaud"));
-        sizePolicy1.setHeightForWidth(m_emserBaud->sizePolicy().hasHeightForWidth());
-        m_emserBaud->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy5(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        sizePolicy5.setHorizontalStretch(0);
+        sizePolicy5.setVerticalStretch(0);
+        sizePolicy5.setHeightForWidth(m_emserBaud->sizePolicy().hasHeightForWidth());
+        m_emserBaud->setSizePolicy(sizePolicy5);
 
         horizontalLayout_4->addWidget(m_emserBaud);
 
@@ -307,11 +285,11 @@ public:
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         m_emSerWrdLgthLbl = new QLabel(groupBox);
         m_emSerWrdLgthLbl->setObjectName(QString::fromUtf8("m_emSerWrdLgthLbl"));
-        QSizePolicy sizePolicy7(QSizePolicy::Fixed, QSizePolicy::Preferred);
-        sizePolicy7.setHorizontalStretch(0);
-        sizePolicy7.setVerticalStretch(0);
-        sizePolicy7.setHeightForWidth(m_emSerWrdLgthLbl->sizePolicy().hasHeightForWidth());
-        m_emSerWrdLgthLbl->setSizePolicy(sizePolicy7);
+        QSizePolicy sizePolicy6(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        sizePolicy6.setHorizontalStretch(0);
+        sizePolicy6.setVerticalStretch(0);
+        sizePolicy6.setHeightForWidth(m_emSerWrdLgthLbl->sizePolicy().hasHeightForWidth());
+        m_emSerWrdLgthLbl->setSizePolicy(sizePolicy6);
 
         horizontalLayout_5->addWidget(m_emSerWrdLgthLbl);
 
@@ -340,8 +318,8 @@ public:
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         m_emSerStpBtLbl = new QLabel(groupBox);
         m_emSerStpBtLbl->setObjectName(QString::fromUtf8("m_emSerStpBtLbl"));
-        sizePolicy7.setHeightForWidth(m_emSerStpBtLbl->sizePolicy().hasHeightForWidth());
-        m_emSerStpBtLbl->setSizePolicy(sizePolicy7);
+        sizePolicy6.setHeightForWidth(m_emSerStpBtLbl->sizePolicy().hasHeightForWidth());
+        m_emSerStpBtLbl->setSizePolicy(sizePolicy6);
 
         horizontalLayout_6->addWidget(m_emSerStpBtLbl);
 
@@ -370,8 +348,8 @@ public:
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         m_emSerChkBitLbl = new QLabel(groupBox);
         m_emSerChkBitLbl->setObjectName(QString::fromUtf8("m_emSerChkBitLbl"));
-        sizePolicy7.setHeightForWidth(m_emSerChkBitLbl->sizePolicy().hasHeightForWidth());
-        m_emSerChkBitLbl->setSizePolicy(sizePolicy7);
+        sizePolicy6.setHeightForWidth(m_emSerChkBitLbl->sizePolicy().hasHeightForWidth());
+        m_emSerChkBitLbl->setSizePolicy(sizePolicy6);
 
         horizontalLayout_7->addWidget(m_emSerChkBitLbl);
 
@@ -403,6 +381,29 @@ public:
         horizontalLayout_10->addWidget(groupBox);
 
 
+        verticalLayout_2->addLayout(horizontalLayout_10);
+
+        groupBox_3 = new QGroupBox(PushSSDemoClass);
+        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
+        sizePolicy5.setHeightForWidth(groupBox_3->sizePolicy().hasHeightForWidth());
+        groupBox_3->setSizePolicy(sizePolicy5);
+        horizontalLayout_11 = new QHBoxLayout(groupBox_3);
+        horizontalLayout_11->setSpacing(6);
+        horizontalLayout_11->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        horizontalLayout_11->setContentsMargins(4, 1, 2, 3);
+        m_info = new QTextBrowser(groupBox_3);
+        m_info->setObjectName(QString::fromUtf8("m_info"));
+        sizePolicy.setHeightForWidth(m_info->sizePolicy().hasHeightForWidth());
+        m_info->setSizePolicy(sizePolicy);
+        m_info->setAutoFillBackground(false);
+
+        horizontalLayout_11->addWidget(m_info);
+
+
+        verticalLayout_2->addWidget(groupBox_3);
+
+
         retranslateUi(PushSSDemoClass);
 
         QMetaObject::connectSlotsByName(PushSSDemoClass);
@@ -411,7 +412,6 @@ public:
     void retranslateUi(QDialog *PushSSDemoClass)
     {
         PushSSDemoClass->setWindowTitle(QCoreApplication::translate("PushSSDemoClass", "PushSoundWindow", nullptr));
-        groupBox_3->setTitle(QCoreApplication::translate("PushSSDemoClass", "\347\212\266\346\200\201", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("PushSSDemoClass", "\345\233\276\345\275\242\350\257\206\345\210\253\344\270\216\351\237\263\351\242\221\346\216\250\351\200\201", nullptr));
         label_7->setText(QCoreApplication::translate("PushSSDemoClass", "\345\233\276\345\203\217\350\257\206\345\210\253\357\274\232", nullptr));
         m_ImgRecStartBtn->setText(QCoreApplication::translate("PushSSDemoClass", "\345\220\257\345\212\250", nullptr));
@@ -454,6 +454,7 @@ public:
         m_emSerChkBit->setItemText(3, QCoreApplication::translate("PushSSDemoClass", "Mark", nullptr));
         m_emSerChkBit->setItemText(4, QCoreApplication::translate("PushSSDemoClass", "Space", nullptr));
 
+        groupBox_3->setTitle(QCoreApplication::translate("PushSSDemoClass", "\347\212\266\346\200\201", nullptr));
     } // retranslateUi
 
 };

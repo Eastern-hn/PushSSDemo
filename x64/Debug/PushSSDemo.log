@@ -1,4 +1,4 @@
-﻿  uic PushSSDemo.ui
+﻿  moc PushSSDemo.h
   PushSSDemo.cpp
   main.cpp
   moc_PushSSDemo.cpp
