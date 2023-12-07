@@ -1,5 +1,2 @@
-﻿  moc PushSSDemo.h
-  PushSSDemo.cpp
-  main.cpp
-  moc_PushSSDemo.cpp
+﻿  PushSSDemo.cpp
   PushSSDemo.vcxproj -> E:\Code\PushSSDemo\x64\Debug\PushSSDemo.exe

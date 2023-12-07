@@ -193,8 +193,11 @@ public:
 
         m_em1SerOpenBtn = new QPushButton(groupBox);
         m_em1SerOpenBtn->setObjectName(QString::fromUtf8("m_em1SerOpenBtn"));
-        sizePolicy1.setHeightForWidth(m_em1SerOpenBtn->sizePolicy().hasHeightForWidth());
-        m_em1SerOpenBtn->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(m_em1SerOpenBtn->sizePolicy().hasHeightForWidth());
+        m_em1SerOpenBtn->setSizePolicy(sizePolicy3);
 
         horizontalLayout_2->addWidget(m_em1SerOpenBtn);
 
@@ -211,11 +214,11 @@ public:
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         m_em2SerLabel = new QLabel(groupBox);
         m_em2SerLabel->setObjectName(QString::fromUtf8("m_em2SerLabel"));
-        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Ignored);
-        sizePolicy3.setHorizontalStretch(0);
-        sizePolicy3.setVerticalStretch(0);
-        sizePolicy3.setHeightForWidth(m_em2SerLabel->sizePolicy().hasHeightForWidth());
-        m_em2SerLabel->setSizePolicy(sizePolicy3);
+        QSizePolicy sizePolicy4(QSizePolicy::Fixed, QSizePolicy::Ignored);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(m_em2SerLabel->sizePolicy().hasHeightForWidth());
+        m_em2SerLabel->setSizePolicy(sizePolicy4);
         m_em2SerLabel->setFrameShadow(QFrame::Plain);
 
         horizontalLayout_3->addWidget(m_em2SerLabel);
@@ -244,11 +247,11 @@ public:
         m_emserBaudLbl = new QLabel(groupBox);
         m_emserBaudLbl->setObjectName(QString::fromUtf8("m_emserBaudLbl"));
         m_emserBaudLbl->setEnabled(true);
-        QSizePolicy sizePolicy4(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy4.setHorizontalStretch(3);
-        sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(m_emserBaudLbl->sizePolicy().hasHeightForWidth());
-        m_emserBaudLbl->setSizePolicy(sizePolicy4);
+        QSizePolicy sizePolicy5(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy5.setHorizontalStretch(3);
+        sizePolicy5.setVerticalStretch(0);
+        sizePolicy5.setHeightForWidth(m_emserBaudLbl->sizePolicy().hasHeightForWidth());
+        m_emserBaudLbl->setSizePolicy(sizePolicy5);
 
         horizontalLayout_4->addWidget(m_emserBaudLbl);
 
@@ -265,15 +268,15 @@ public:
         m_emserBaud->addItem(QString());
         m_emserBaud->addItem(QString());
         m_emserBaud->setObjectName(QString::fromUtf8("m_emserBaud"));
-        QSizePolicy sizePolicy5(QSizePolicy::Expanding, QSizePolicy::Fixed);
-        sizePolicy5.setHorizontalStretch(0);
-        sizePolicy5.setVerticalStretch(0);
-        sizePolicy5.setHeightForWidth(m_emserBaud->sizePolicy().hasHeightForWidth());
-        m_emserBaud->setSizePolicy(sizePolicy5);
+        QSizePolicy sizePolicy6(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        sizePolicy6.setHorizontalStretch(0);
+        sizePolicy6.setVerticalStretch(0);
+        sizePolicy6.setHeightForWidth(m_emserBaud->sizePolicy().hasHeightForWidth());
+        m_emserBaud->setSizePolicy(sizePolicy6);
 
         horizontalLayout_4->addWidget(m_emserBaud);
 
-        horizontalSpacer_2 = new QSpacerItem(80, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+        horizontalSpacer_2 = new QSpacerItem(150, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
 
         horizontalLayout_4->addItem(horizontalSpacer_2);
 
@@ -285,11 +288,11 @@ public:
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         m_emSerWrdLgthLbl = new QLabel(groupBox);
         m_emSerWrdLgthLbl->setObjectName(QString::fromUtf8("m_emSerWrdLgthLbl"));
-        QSizePolicy sizePolicy6(QSizePolicy::Fixed, QSizePolicy::Preferred);
-        sizePolicy6.setHorizontalStretch(0);
-        sizePolicy6.setVerticalStretch(0);
-        sizePolicy6.setHeightForWidth(m_emSerWrdLgthLbl->sizePolicy().hasHeightForWidth());
-        m_emSerWrdLgthLbl->setSizePolicy(sizePolicy6);
+        QSizePolicy sizePolicy7(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        sizePolicy7.setHorizontalStretch(0);
+        sizePolicy7.setVerticalStretch(0);
+        sizePolicy7.setHeightForWidth(m_emSerWrdLgthLbl->sizePolicy().hasHeightForWidth());
+        m_emSerWrdLgthLbl->setSizePolicy(sizePolicy7);
 
         horizontalLayout_5->addWidget(m_emSerWrdLgthLbl);
 
@@ -306,7 +309,7 @@ public:
 
         horizontalLayout_5->addWidget(m_emSerWrdLgth);
 
-        horizontalSpacer_4 = new QSpacerItem(80, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+        horizontalSpacer_4 = new QSpacerItem(150, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
         horizontalLayout_5->addItem(horizontalSpacer_4);
 
@@ -318,8 +321,8 @@ public:
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         m_emSerStpBtLbl = new QLabel(groupBox);
         m_emSerStpBtLbl->setObjectName(QString::fromUtf8("m_emSerStpBtLbl"));
-        sizePolicy6.setHeightForWidth(m_emSerStpBtLbl->sizePolicy().hasHeightForWidth());
-        m_emSerStpBtLbl->setSizePolicy(sizePolicy6);
+        sizePolicy7.setHeightForWidth(m_emSerStpBtLbl->sizePolicy().hasHeightForWidth());
+        m_emSerStpBtLbl->setSizePolicy(sizePolicy7);
 
         horizontalLayout_6->addWidget(m_emSerStpBtLbl);
 
@@ -336,7 +339,7 @@ public:
 
         horizontalLayout_6->addWidget(m_emSerStpBit);
 
-        horizontalSpacer_6 = new QSpacerItem(80, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+        horizontalSpacer_6 = new QSpacerItem(150, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
         horizontalLayout_6->addItem(horizontalSpacer_6);
 
@@ -348,8 +351,8 @@ public:
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         m_emSerChkBitLbl = new QLabel(groupBox);
         m_emSerChkBitLbl->setObjectName(QString::fromUtf8("m_emSerChkBitLbl"));
-        sizePolicy6.setHeightForWidth(m_emSerChkBitLbl->sizePolicy().hasHeightForWidth());
-        m_emSerChkBitLbl->setSizePolicy(sizePolicy6);
+        sizePolicy7.setHeightForWidth(m_emSerChkBitLbl->sizePolicy().hasHeightForWidth());
+        m_emSerChkBitLbl->setSizePolicy(sizePolicy7);
 
         horizontalLayout_7->addWidget(m_emSerChkBitLbl);
 
@@ -367,7 +370,7 @@ public:
 
         horizontalLayout_7->addWidget(m_emSerChkBit);
 
-        horizontalSpacer_8 = new QSpacerItem(80, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+        horizontalSpacer_8 = new QSpacerItem(150, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
         horizontalLayout_7->addItem(horizontalSpacer_8);
 
@@ -385,8 +388,9 @@ public:
 
         groupBox_3 = new QGroupBox(PushSSDemoClass);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        sizePolicy5.setHeightForWidth(groupBox_3->sizePolicy().hasHeightForWidth());
-        groupBox_3->setSizePolicy(sizePolicy5);
+        sizePolicy6.setHeightForWidth(groupBox_3->sizePolicy().hasHeightForWidth());
+        groupBox_3->setSizePolicy(sizePolicy6);
+        groupBox_3->setMaximumSize(QSize(16777215, 190));
         horizontalLayout_11 = new QHBoxLayout(groupBox_3);
         horizontalLayout_11->setSpacing(6);
         horizontalLayout_11->setContentsMargins(11, 11, 11, 11);
